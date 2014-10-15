@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding:0;
+	margin:0;
+}	
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+	background-color: #FFEC70;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #000;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: Damion,cursive;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: Alef, serif;
+    background-color:#7F653B; 
+        ;
+}
+h3{
+	font-size: 2.2rem;
+	font-family: Alef,serif;
+	color: #494949;	
+    background-color: #CCA25E ;
+}
+p, li, a{
+	font-weight: 400;
+	font-family: ABeeZee , sans-serif;
+	color: #555;
+    
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+    font-family:  ABeeZee,sans-serif;
+    background-color: #FFE5BC ;
+}
+li{
+   font-family: ABeeZee ,sans-serif;
+    font-size: 1.4rem;
+    
+}
+ol li{
+    font-family:  ABeeZee ,sans-serif;
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+    font-family:  ABeeZee ,sans-serif;
+}	
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	
+    background: linear-gradient(#FFCB76, darkred);
+    
+}
+.masthead{
+	
+}
+.nav{
+	}
+.navbar{
+}
+.main{
+}
+.sidebar{
+	
+}
+.two,.three
+{
+   
+}
+.footer{
+ 
+ clear: both;
+ position: relative;
+ z-index: 10;
+ height: 3.4    em;
+ margin-top: -3em;
+
+	
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+	  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+    padding-right: 15px;
+     
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #e4e4e4; 
+	background-color: #7F653B;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #FFE5BC;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #7F653B ;
+}
+@media all and (min-width:1080px) and (max-width:1800px){
+  .nav,.main, .two, .three{
+    float:left;
+    height: auto;
+  }
+    .main{
+	width: 30%;
+    background-color: #848484;
+    margin-right: 25px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    
+}
+    .two,.three
+{
+    width: 20%;
+    
+    background-color:#848484;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+    .nav{
+	width: 15%;
+    margin-right: 25px;
+    margin-left: 20px;    
+    }
+    
+    h1{
+	font-size: 3.6rem;	
+	
+}
+    .navbar li{
+        width: 100%;
+    }
+}
+@media all and (min-width:720px) and (max-width: 1080px){
+  .main, .two, .three{
+    float:left;
+    height:auto;
+  }
+ .main{
+	width: 40%;
+    background-color: #848484;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px; 
+    
+}
+      .two,.three
+{
+    width: 20%;
+    
+    background-color:#848484;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    
+}
+    h1{
+	font-size: 3.0rem;	
+	
+        
+}
+    .nav
+    {   width: 100%; 
+        color: #2E2E2E;
+        margin-right: 25px;
+        margin-left: 25px;
+        
+    }
+     .navbar li{
+        width: 20%;
+    }
+}
+
+@media all and (min-width:500px) and (max-width: 719px){
+  .main, .two, .three{
+    float:left;
+    height: auto;
+  }
+ .main{
+	width: 90%;
+    background-color: #848484;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px; 
+    
+}
+        .two,.three
+{
+    width: 43%;
+    
+    background-color:#848484;
+    
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+     .nav
+    {   width: 100% 
+        margin-right: 20px;
+        margin-left: 25px;
+        height: 20%;
+    }
+     .navbar li{
+        width: 21.5%;
+    }
+   .navbar a{
+   font-size: 70%;
+   padding: 6px 4px}
+    h1{
+	font-size: 2.3rem;	
+	
+        
+}
+    
+}
+
+@media all and  (max-width: 499px){
+  .main, .two, .three{
+    float:left;
+    height: auto;
+  }
+    .main{
+	width: 90%;
+    background-color: #848484;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 25px; 
+    
+}
+        .two,.three
+{
+    width: 90%;
+    
+    background-color:#848484;
+    
+    margin-bottom: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+     h1{
+	font-size: 1.8rem;	
+	
+        
+}
+    .nav{
+	width: 100%;
+    margin-right: 25px;
+    margin-left: 25px;    
+    }
+.navbar li{
+       width: 43%;
+    }
+    .navbar a{
+    font-size: 70%;    
+   width: 100%;
+   padding: 4px 2px;}
+}
